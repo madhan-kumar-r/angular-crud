@@ -1,4 +1,4 @@
-<p>
+<!-- <p>
   <mat-toolbar color="primary">
     <button
       mat-icon-button
@@ -11,6 +11,9 @@
     <span class="example-spacer"></span>
     <div class="btns">
       <button mat-raised-button>
+        <a routerLink="/">Dashboard</a>
+      </button>
+      <button mat-raised-button>
         <a routerLink="/customer-data"> Users</a></button
       ><button mat-raised-button>
         <a routerLink="/broadband-plans">Plans</a>
@@ -20,7 +23,11 @@
       </button>
     </div>
   </mat-toolbar>
-</p>
+</p> -->
 
-<router-outlet></router-outlet>
-<router-outlet></router-outlet>
+<app-nav></app-nav>
+
+<!-- Router outlest is used in nav.conponent.html file , 
+  inoder to wrap the content with toolbar and sidenav -->
+
+<!-- <router-outlet></router-outlet> -->
