@@ -72,7 +72,7 @@
     width: 100% !important;
     height: auto !important;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 760px) {
     .dashboard-card {
       max-width: 100%;
     }
@@ -132,13 +132,15 @@
         [style.background-color]="'#2ecc71'"
       >
         <mat-card-header>
-          <mat-card-title style="color: white">Individual Users</mat-card-title>
+          <mat-card-title style="color: white"
+            >Individual plan users</mat-card-title
+          >
           <button mat-icon-button>
             <mat-icon style="color: white">more_vert</mat-icon>
           </button>
         </mat-card-header>
         <mat-card-content style="color: white">
-          <p>Individual Users: {{ individualCustomers.length }}</p>
+          <p>Total Individual plan users: {{ individualCustomers.length }}</p>
         </mat-card-content>
       </mat-card>
 
@@ -148,13 +150,15 @@
         [style.background-color]="'#3E3232'"
       >
         <mat-card-header>
-          <mat-card-title style="color: white">Business Users</mat-card-title>
+          <mat-card-title style="color: white"
+            >Business plan users</mat-card-title
+          >
           <button mat-icon-button>
             <mat-icon style="color: white">more_vert</mat-icon>
           </button>
         </mat-card-header>
         <mat-card-content style="color: white">
-          <p>Business Users: {{ businessCustomers.length }}</p>
+          <p>Total Business plan users: {{ businessCustomers.length }}</p>
         </mat-card-content>
       </mat-card>
     </div>
@@ -238,7 +242,7 @@
       </div>
 
       <div class="table" *ngIf="individualUsersTableVisible">
-        <h2>Individual Plan</h2>
+        <h2>Individual plan Users</h2>
         <table
           mat-table
           [dataSource]="individualCustomers"
@@ -315,7 +319,7 @@
       </div>
 
       <div class="table" *ngIf="businessUsersTableVisible">
-        <h2>Business Plan</h2>
+        <h2>Business plan users</h2>
         <table
           mat-table
           [dataSource]="businessCustomers"
